@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔍 JS Fetch API</title>
+    <!-- =====================CSS & FONT AWESOME LINK==================== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">🍲 API Fetch & Feast</h1>
+
+      <div class="meal-container">
+        <form class="meal-container-flex" id="submit">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for Meals"
+            autocomplete="off"
+          />
+          <button class="search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">🔀Random</button>
+      </div>
+      <p id="meal-result-heading" class="meal-result-heading"></p>
+      <div class="meals-container">
+        <div id="meals" class="all-meals"></div>
+      </div>
+      <div id="single-meal-container"></div>
+    </div>
+
+    <!-- =======================javascript======================= -->
+    <script src="script.js"></script>
+  </body>
+</html>

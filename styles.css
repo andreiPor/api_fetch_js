@@ -1,0 +1,268 @@
+ /* ==================== FONT IMPORT ==================== */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+ /* ==================== GLOBAL STYLES ==================== */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ /* ==================== CONTAINER ==================== */
+ .container {
+     max-width: 900px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ /* ==================== HEADING ==================== */
+ .heading {
+     color: #374151;
+     margin: 10px;
+ }
+
+ /* ==================== SEARCH INPUT & BUTTON ==================== */
+ input {
+     border: 2px solid #94a3b8;
+     border-top-left-radius: 8px;
+     border-bottom-left-radius: 8px;
+     font-size: 14px;
+     padding: 9px;
+     width: 400px;
+     outline: none;
+     margin: 0;
+ }
+
+ .search-btn {
+     cursor: pointer;
+     border-top-right-radius: 8px;
+     border-bottom-right-radius: 8px;
+     width: 50px;
+     outline: none;
+     padding: 9px;
+     border: 2px solid #94a3b8;
+     background-color: #e0e7ff;
+     transition: background-color 0.3s ease;
+     margin: 0;
+ }
+
+ .search-btn:hover {
+     background-color: #c7d2fe;
+ }
+
+ /* ==================== SEARCH SECTION CONTAINER ==================== */
+ .meal-container {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin: 20px 0;
+     width: 100%;
+     max-width: 500px;
+     align-items: center;
+ }
+
+ .meal-container-flex {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+ }
+
+ /* ==================== RANDOM BUTTON ==================== */
+ .random-btn {
+     cursor: pointer;
+     border: 2px solid #94a3b8;
+     background-color: #e0e7ff;
+     padding: 9px 20px;
+     border-radius: 8px;
+     font-weight: 600;
+     color: #374151;
+     transition: background-color 0.3s ease;
+     width: fit-content;
+ }
+
+ .random-btn:hover {
+     background-color: #c7d2fe;
+ }
+
+ /* ==================== SEARCH RESULT HEADING ==================== */
+ .meal-result-heading {
+     color: #374151;
+     margin: 15px 0;
+     font-weight: 600;
+     font-size: 1.1rem;
+ }
+
+ /* ==================== MEALS GRID CONTAINER ==================== */
+ .meals-container {
+     width: 100%;
+     max-width: 900px;
+     margin: 15px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .all-meals {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 5px;
+     margin-top: 20px;
+     color: #374151;
+     font-weight: 500;
+     font-size: 1rem;
+ }
+
+ /* ==================== INDIVIDUAL MEAL CARD ==================== */
+ .meal {
+     overflow: hidden;
+     cursor: pointer;
+     position: relative;
+     height: 240px;
+     width: 200px;
+     text-align: center;
+ }
+
+ .meal img {
+     width: 100%;
+     height: 80%;
+     border: 2px solid #94a3b8;
+     transition: transform 0.3s ease;
+ }
+
+ .meal-info {
+     position: absolute;
+     bottom: 0;
+     height: 28%;
+     width: 100%;
+     background-color: #e0e7ff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #000000;
+     transition: background-color 0.3s ease;
+ }
+
+ .meal:hover img {
+     transform: scale(1.1);
+ }
+
+ .meal:hover .meal-info {
+     background-color: #d9f3c0;
+ }
+
+ /* ==================== SINGLE MEAL DETAILS ==================== */
+ .single-meal {
+     background-color: #f1f5f9;
+     border: 2px solid #94a3b8;
+     border-radius: 10px;
+     padding: 20px;
+     margin-top: 30px;
+     width: 100%;
+     max-width: 600px;
+     text-align: center;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+     transition: transform 0.3s ease;
+ }
+
+ .single-meal:hover {
+     transform: scale(1.01);
+ }
+
+ .single-meal h1 {
+     font-size: 1.8rem;
+     color: #1f2937;
+     margin-bottom: 15px;
+ }
+
+ /* ==================== SINGLE MEAL INFO (CATEGORY / AREA) ==================== */
+ .single-meal-info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #d9f3c0;
+     padding: 15px;
+     border-radius: 8px;
+     border: 1px solid #94a3b8;
+     color: #1e293b;
+     font-weight: 500;
+     gap: 10px;
+     margin-top: 10px;
+ }
+
+ /* ==================== SINGLE MEAL IMAGE ==================== */
+ .single-meal img {
+     width: 100%;
+     max-width: 400px;
+     height: auto;
+     margin: 20px 0;
+     border-radius: 10px;
+     border: 2px solid #94a3b8;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+ }
+
+ /* ==================== INGREDIENTS&Instructions SECTION ==================== */
+ .single-meal .main h2 {
+     margin-top: 25px;
+     margin-bottom: 15px;
+     font-size: 1.4rem;
+     color: #374151;
+     border-bottom: 2px solid #94a3b8;
+     padding-bottom: 5px;
+ }
+
+ .single-meal .main ul {
+     list-style-type: disc;
+     padding-left: 20px;
+     text-align: left;
+ }
+
+ .single-meal .main ul li {
+     margin-bottom: 8px;
+     font-size: 1rem;
+     color: #1e293b;
+     line-height: 1.5;
+ }
+
+ .single-meal .main {
+     margin-top: 20px;
+     text-align: left;
+ }
+
+
+ .single-meal .main h2 {
+     margin-top: 25px;
+     margin-bottom: 15px;
+     font-size: 1.4rem;
+     color: #374151;
+     border-bottom: 2px solid #94a3b8;
+     padding-bottom: 5px;
+ }
+
+ /* Ingredients list styling */
+ .single-meal .main ul {
+     list-style-type: disc;
+     padding-left: 20px;
+     color: #1e293b;
+     font-size: 1rem;
+     line-height: 1.5;
+     margin-bottom: 20px;
+ }
+
+
+ .single-meal .main ul li {
+     margin-bottom: 8px;
+ }
+
+
+ .single-meal .main p {
+     font-size: 1rem;
+     color: #1e293b;
+     line-height: 1.6;
+     white-space: pre-line;
+     }
